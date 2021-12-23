@@ -6,23 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pseudo</title>
     <style>
+        /* normally use link and hover */
         a:link { /* link not visited */
 
         }
         a:visited { /* link already visited */
 
         }
-        a:hover { /* mouse hover link */
-
+        a:hover { /* mouse hover a-link */
+            color: red;
         }
         a:active { /* link chosen and keep chosen not move */
 
         }
+
+        a{
+            font-weight: bold;
+            font-size: 20px;
+            color: grey;
+        }
+
+        li:first-child{ /* the first child */
+            color:red;
+        }
+        li:last-child{ /* the last child */
+            color:green;
+        }
+        li:nth-child(4){ /* the chosen child in order */
+            color:aqua;
+        }
+        li:nth-child(even){ /* the chosen even or odd child  even = 2n  odd = 2n+1  3n =0 3 6 9...*/
+            font-size: 22px;
+        }
+        li:nth-last-child(2n){ /* the chosen child in desc order */
+            color: yellow;
+        }
     </style>
 </head>
 <body>
-    <a>第一链接</a>
-    <a>第二链接</a>
+    <a href="http://www.baidu.com" target="_blank">第一链接</a>
+    <a href="#">第二链接</a>
     <a>第三链接</a>
+
+    <ul>
+        <li>first 孩子</li>
+        <li>second 孩子</li>
+        <li>third 孩子</li>
+        <li>fourth 孩子</li>
+        <li>fifth 孩子</li>
+        <li>sixth 孩子</li>
+        <li>seventh 孩子</li>
+    </ul>
 </body>
 </html>
