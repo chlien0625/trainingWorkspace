@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a[title] {
+            color: red;
+            /* this selector chooses all the <a>s that has the particular attribute 'title' */
+        }
+        a[title='百度链接'] {
+            font-size: 25px;
+            /* this selector chooses all the <a>s that has the particular attribute 'title' which equals "百度链接" */
+        }
+        div[class^='font'] {
+            color: yellowgreen;
+            /* this selector chooses all the <div>s that has the particular attribute 'class' starts with 'font' */
+        }
+        div[class$='24'] {
+            color: blueviolet;
+            /* this selector chooses all the <div>s that has the particular attribute 'class' ends with '24'*/
+        }
+        div[class*='tao'] {
+            font-size: 22px;
+            /* this selector chooses all the <div>s that has the particular attribute 'class' has 'tao'*/
+        }
+    </style>
+</head>
+<body>
+    <a href="#" title="百度链接">百度</a>
+    <a href="#" title="网易链接">网易</a>
+    <a href="#">腾讯</a>
+    <a href="#">微博</a>
+
+    <div class="font12">属性选择器</div>
+    <div class="font12">属性选择器</div>
+    <div class="font12">属性选择器</div>
+    <div class="font24">属性选择器</div>
+    <div class="font24">属性选择器</div>
+
+    <div class="news-tao-viewer">属性选择器</div>
+    <div class="tao-news">属性选择器</div>
+    <div class="news-tao">属性选择器</div>
+</body>
+</html>

@@ -44,6 +44,14 @@
         li:nth-last-child(2n){ /* the chosen child in desc order */
             color: yellow;
         }
+        li::first-letter{
+            font-size: 25px;
+            /* pseudo element selector, first-letter changes the first letter, first-line changes the first line */
+        }
+        li::selection{
+            color: pink;
+            /* pseudo element selector, selection changes the selected texts */
+        }
     </style>
 </head>
 <body>
