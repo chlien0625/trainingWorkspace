@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            color: red;
+            /* tag selector specificity 0,0,0,1 */
+        }
+        :first-child {
+            color: green;
+            /* pseudo selector specificity 0,0,1,0 */
+        }
+        .specClass {
+            color: yellow;
+            /* class selector specificity 0,0,1,0 */
+        }
+        #specId {
+            color: blue;
+            /* id selector specificity 0,1,0,0 */
+            font-size: 40px !important;
+            /* !important css specificity plus infinity */
+        }
+    </style>
+</head>
+<body>
+    <!--  the style in tags specificity 1,0,0,0 -->
+    <div style="color: brown" id="specId" class="specClass">
+        测试文案
+    </div>
+</body>
+</html>
