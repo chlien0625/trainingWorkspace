@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div:first-child {
+            width: 200px;
+            height: 200px;
+            box-sizing: content-box;
+            /* now the width is 200px, 200px color is red */
+            background-color: red;
+            padding: 10px;
+            /* now the width is 200px plus 2 * padding 10px = 220px, and the 220px color is red */
+            border: 20px solid blue;
+            /* now the width is 220px plus 2 * border 20px = 260px, 
+            and the 220px color is red, the left and right 20px border is blue */
+        }
+        div:last-child {
+            width: 200px;
+            height: 200px;
+            box-sizing: border-box;
+            /* now the width is 200px, and 200px color is yellow */
+            background-color: yellow;
+            padding: 10px; /* because of the box-sizing is border-box, now the padding doesn't make the box bigger */
+            /* now the width is still 200px, and 200px color is yellow */
+            border: 20px solid blue; /* because of the box-sizing is border-box, now the border doesn't make the box bigger */
+            /* now the width is still 200px, and 1600px color is yellow, the left and right 20px border is blue */
+        }
+    </style>
+</head>
+<body>
+    <div>content box</div>
+    <div>border box</div>
+</body>
+</html>
