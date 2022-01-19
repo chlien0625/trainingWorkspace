@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav {
+            min-width: 320px;
+            max-width: 540px;
+            padding: 5px;
+            background-color: #c0c0c0;
+            /* the background get its min-width and max-width */
+        }
+        .row {
+            height: 90px;   
+            width: 100%;
+            background-color: rgb(255, 120, 120);
+            border-radius: 10px;
+            display: flex;  
+            /* the row‘s display is flex, so we can use flex to split the whole div into three pieces */
+        }
+        .row3 {
+            flex: 1;
+            border-left: 2px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .row div:first-child {
+            border: none;
+        }
+        .split {
+            display: flex;
+            flex-direction: column;
+            /* when flex-direction is column, the div will be split vertically */
+        }
+        .split div {
+            flex: 1;
+            border-top: 2px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            width: 100%;
+        }
+        .split div:first-child {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="row">
+            <div class="row3">测试测试</div>
+            <div class="row3 split">
+                <div>测试链接</div>
+                <div>测试链接</div>
+            </div>
+            <div class="row3 split">
+                <div>测试链接</div>
+                <div>测试链接</div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
