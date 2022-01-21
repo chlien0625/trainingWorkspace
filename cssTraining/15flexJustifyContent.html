@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            width: 800px;
+            height: 300px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: flex-start;
+            /* means all the son divs start from the left */
+            justify-content: flex-end;
+            /* means all the son divs start from the right */
+            justify-content: center;
+            /* means all the son divs are in the middle of the father div */
+            justify-content: space-around;
+            /* means all the son divs are in the middle of the father div, 
+            the margin between son divs are twice as wide as the father div margin to the son divs */
+            justify-content: space-between;
+            /* means all the son divs will use the whole width of the father div, 
+            the extra width will be the margin between son divs*/
+            justify-content: space-evenly;
+            /* means all the son divs are in the middle of the father div, the extra width will be the margin between son divs */
+
+            flex-wrap: wrap;
+            /* if the son divs's width is bigger than the father div's width, 'wrap' will automatically wrap the son divs,
+            'nowrap' will keep all the child divs in one line */
+        }
+        .son {
+            width: 200px;
+            height: 200px;
+        }
+        .father div:first-child {
+            background-color: red;
+        }
+        .father div:nth-child(2) {
+            background-color: green;
+        }
+        .father div:nth-child(3) {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son"></div>
+        <div class="son"></div>
+        <div class="son"></div>
+    </div>
+</body>
+</html>

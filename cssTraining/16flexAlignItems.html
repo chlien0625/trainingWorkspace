@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            width: 800px;
+            height: 400px;
+            border: 1px solid black;
+            display: flex;
+            align-items: flex-start;
+            /* means all the son divs start from the top vertically */
+            align-items: flex-end;
+            /* means all the son divs start from the bottom vertically */
+            align-items: center;
+            /* means all the son divs start are in the middle of the father div vertically */
+            align-items: stretch;
+            /* mean all the son divs' height equals the father div's height if son div's height are not setted */
+        }
+        .son {
+            width: 200px;
+            height: 100px;
+        }
+        .father div:first-child {
+            background-color: red;
+        }
+        .father div:nth-child(2) {
+            background-color: green;
+        }
+        .father div:nth-child(3) {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son"></div>
+        <div class="son"></div>
+        <div class="son"></div>
+    </div>
+</body>
+</html>

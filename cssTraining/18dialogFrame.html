@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .triangle {
+            width: 0px;
+            height: 0px;
+            margin-left: -20px;
+            border-top: 20px solid transparent;
+            border-left: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            border-right: 20px solid red;
+            margin-bottom: 30px;
+        }
+        .dialog {
+            width: 350px;
+            background-color: #6A6;
+            color: white;
+            padding: 10px 15px;
+            box-sizing: border-box;
+            border-radius: 6px;
+            margin-left: 40px;
+        }
+        .dialog::before {
+            content: '';
+            border-left: 0 solid transparent;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-right: 10px solid #6A6;
+            position: absolute;
+            left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="triangle"></div>
+    <div class="dialog">你好，我是新朋友xxxxx.</div>
+</body>
+</html>
