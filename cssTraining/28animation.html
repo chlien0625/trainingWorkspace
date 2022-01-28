@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .test {
+            width: 600px;
+            height: 600px;
+            border: 1px solid black;
+        }
+        .square {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            position: relative;
+            animation: specialMove 2s infinite;
+        }
+        @keyframes specialMove {
+            0% {top: 0; left: 0;}
+            25% {top: 0; left: 450px;}
+            50% {top: 450px; left: 450px;}
+            75% {top: 450px; left: 0;}
+            100% {top: 0; left: 0;}
+        }
+    </style>
+</head>
+<body>
+    <div class="test">
+        <div class="square"></div>
+    </div>
+</body>
+</html>
