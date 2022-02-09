@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style1.css" media="(min-device-width: 201px) and (max-device-width: 400px)">
+    <link rel="stylesheet" href="css/style2.css" media="(min-device-width: 401px) and (max-device-width: 600px)">
+    <!-- this way use outer different stylelink to differ -->
+    <title>Document</title>
+    <style>
+        .container {
+            width: 100%;
+            height: 500px;
+        }
+        .container div {
+            float: left;
+        }
+    </style>
+
+    <style media="(min-device-width: 200px) and (max-device-width: 400px)">
+
+    </style>
+    <style media="(min-device-width: 401px) and (max-device-width: 600px)">
+
+    </style>
+    <!-- this way use inner different stylesheet to differ -->
+</head>
+<body>
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
